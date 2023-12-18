@@ -97,7 +97,7 @@
     // security options are hard-coded at build time
     const {
       scuttleGlobalThis,
-    } = {"scuttleGlobalThis":{"enabled":false,"exceptions":["postMessage","removeEventListener","isSecureContext","ReactNativeWebView"]}}
+    } = {"scuttleGlobalThis":{"enabled":true,"exceptions":["postMessage","removeEventListener","isSecureContext","ReactNativeWebView","JSON","String"]}}
 
     function getGlobalRef () {
       if (typeof globalThis !== 'undefined') {
@@ -12550,6 +12550,8 @@ module.exports = {
 
 })()
 </script>
-    <script src="bundle.js"></script>
   </head>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
 </html>
